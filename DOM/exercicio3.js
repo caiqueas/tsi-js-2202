@@ -13,6 +13,13 @@ let e;
 //e = document.scripts[2].getAttribute('src');
 //e = document.title; 
 //e = document.links;
-e = document.querySelector('href');
+
+//Com querySelector()
+//e = document.querySelector('href');
+//e = document.querySelector('div . row');
+//e = document.querySelector('input#task');
+//e = document.querySelector('li:first-child').innerText;
+//e = document.querySelector('li:last-child').innerText;
+//e = document.querySelector('li:nth-child(3)').innerText;
 
 console.log(e);
