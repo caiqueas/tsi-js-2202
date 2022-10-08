@@ -1,48 +1,47 @@
-//como criar elementos
+//Como criar elementos
 
-//Criando o elemento <li>
-
+//Cria o elemento li
 let novoItemNaLista = document.createElement('li');
-novoItemNaLista.id = 'novo-intem';
 
-//define a class css donovo elemento 
+//Define o id do novo elemento
+novoItemNaLista.id = 'novo-item';
 
+//Define a classe CSS do novo elemento
 novoItemNaLista.className = 'collection-item';
 
-//adicionar um aributo
+//Adiciona um atributo
+novoItemNaLista.setAttribute('title', 'Novo item na lista');
 
-novoItemNaLista.setAttribute('title', 'novoItemNaLista');
-
-//novoItemNaLista.setAttribute('id', 'valor-qualquer');
-
-//adicionar node filho
+//Adiciona um node filho
 novoItemNaLista.appendChild(
-document.createTextNode('Fazer exercício físico'));
+    document.createTextNode('Fazer exercício físico'));
 
-//Criar elemento a
-
+//Criar sub elemento <a>
 let elementoAncora = document.createElement('a');
-elementoAncora.className ="delete-item secondary-content";
+
+elementoAncora.className = 'delete-item secondary-content';
+
 elementoAncora.setAttribute('href', '#');
 
-//Criar sub elento <i> 
-
+//Criar sub elemento <i>
 let elementoIcone = document.createElement('i');
+
 elementoIcone.className = 'fa fa-remove';
 
-//adicionar o <i> em <a>
+//Adiciona o <i> em <a>
 elementoAncora.appendChild(elementoIcone);
 
-//adicionar o <a> em <li>
+//Adiciona o <a> em <li>
 novoItemNaLista.appendChild(elementoAncora);
 
 //Como capturar o <ul> com querySelector
-//let elementoUele = document.querySelector('ul.collection')
+//let elementoUele = document.querySelector('ul.collection');
 //elementoUele.appendChild(novoItemNaLista);
 
 //Como capturar o <ul> pela classe
 let elementoUele = document.getElementsByClassName('collection');
 elementoUele[0].appendChild(novoItemNaLista);
+
 
 
 
